@@ -8,7 +8,7 @@
 
 .container {
   border: 4px solid #aaa;
-  height: auto;
+  height: 100vh;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -20,9 +20,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
+  width: 100%;
 
   & h1 {
-    color: #82c409;
+    color: #5bf859;
     font-size: 4rem;
   }
 
@@ -31,14 +32,14 @@ header {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    flex: 0 1;
+    flex-shrink: 1;
 
     & li {
       margin: 0 1rem;
     }
 
     & li a:hover {
-      color: #000;
+      color: #5bf859;
     }
 
 
@@ -57,19 +58,20 @@ header {
 
     & select:hover {
       cursor: pointer;
-      color: #000;
+      color: #5bf859;
     }
   }
 
   & .icons {
     display: flex;
+    gap: 1rem;
 
-    & img {
-      height: 4rem;
-      width: 4rem;
+    & svg {
+      height: 40px;
+      width: 40px;
     }
 
-    & img:hover {
+    & svg:hover {
       cursor: pointer;
     }
   }
