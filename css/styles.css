@@ -13,3 +13,63 @@
   display: flex;
   flex-direction: column;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+
+  & h1 {
+    color: #82c409;
+    font-size: 4rem;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex: 0 1;
+
+    & li {
+      margin: 0 1rem;
+    }
+
+    & li a:hover {
+      color: #000;
+    }
+
+
+    & li a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    & select {
+      border: white;
+      height: 4rem;
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    & select:hover {
+      cursor: pointer;
+      color: #000;
+    }
+  }
+
+  & .icons {
+    display: flex;
+
+    & img {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    & img:hover {
+      cursor: pointer;
+    }
+  }
+}
