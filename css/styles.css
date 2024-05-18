@@ -5,3 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  border: 4px solid #aaa;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
