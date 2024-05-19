@@ -134,3 +134,94 @@ main {
   }
 }
 
+@media only screen and (max-width: 1180px) { /*  For iPad Air */
+ header {
+
+  & ul {
+    display: none;
+  }
+ }
+
+ footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  width: 100%;
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex-shrink: 1;
+
+    & li {
+      margin: 0 1rem;
+    }
+
+    & li a:hover {
+      color: #5bf859;
+    }
+
+
+    & li a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    & select {
+      border: white;
+      height: 4rem;
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    & select:hover {
+      cursor: pointer;
+      color: #5bf859;
+    }
+
+    & select:focus {
+      outline: none;
+    }
+  }
+}
+}
+
+@media only screen and (max-width: 932px) { /* iPhone 14 Pro */
+
+  .container {
+    height: auto;
+  }
+
+  header {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  main {
+    
+    & .cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      & figure {
+       width: 100%;
+      }
+    }   
+  }
+
+  footer {
+    & ul {
+      flex-direction: column;
+
+      & select {
+        font-size: 1.2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
